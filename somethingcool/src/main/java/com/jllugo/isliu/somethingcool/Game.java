@@ -1,22 +1,19 @@
 package com.jllugo.isliu.somethingcool;
 
-import com.jllugo.isliu.somethingcool.parser.Parser;
-
 import java.util.Scanner;
 
 public class Game {
     private Player player;
-    private Room currRoom;
+    private Room currentRoom;
 
     public Game(Player player, Room currRoom) {
         this.player = player;
-        this.currRoom = currRoom;
+        this.currentRoom = currentRoom;
     }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("What is your name, fellow traveller?");
-        Parser p = new Parser("test");
         String playerName = scanner.nextLine();
 
         System.out.println("What is your craft, " + playerName + "?");
@@ -29,6 +26,4 @@ public class Game {
 
         System.out.println(playerName + ", you are now a " + craft.name() + "!");
     }
-
 }
-
