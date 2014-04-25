@@ -1,3 +1,5 @@
+package com.jllugo.isliu.somethingcool;
+
 public class Room {
     private String name;
     private Room toWest;

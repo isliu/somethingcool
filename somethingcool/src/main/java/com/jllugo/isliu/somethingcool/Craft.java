@@ -1,6 +1,8 @@
+package com.jllugo.isliu.somethingcool;
+
 public enum Craft {
     WIZARD, COBBLER, BALLERINA, MIME;
-    
+
     public static Craft fromName(String name) {
         String upperName = name.toUpperCase();
 
